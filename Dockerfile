@@ -3,6 +3,7 @@ MAINTAINER Agnese Salutari
 RUN apt-get update
 RUN apt-get -y upgrade
 
-RUN dpkg --add-architecture i386
-RUN apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386
+ADD /lib/x86_64-linux-gnu/libpthread.so.0
+ADD /lib/x86_64-linux-gnu/libc.so.6
+ADD /lib64/ld-linux-x86-64.so.2
 
