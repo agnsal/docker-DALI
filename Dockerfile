@@ -18,5 +18,4 @@ RUN rm -rf mas
 
 
 EXPOSE 80/tcp
-EXPOSE 800/tcp
 EXPOSE 3306/tcp
