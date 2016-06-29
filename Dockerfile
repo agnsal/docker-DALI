@@ -11,7 +11,7 @@ RUN apt-get install -y lib32stdc++6
 
 RUN apt-get -y install wget git
 RUN git clone git://github.com/agnsal/ServerDALI
-RUN cd agnsal/ServerDALI
+RUN cd ServerDALI
 RUN git clone git://github.com/AAAI-DISIM-UnivAQ/DALI
 RUN cd DALI
 RUN rm -rf mas
