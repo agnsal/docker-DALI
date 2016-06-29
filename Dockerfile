@@ -6,3 +6,10 @@ RUN apt-get -y upgrade
 RUN apt-get install -y libc6-i386
 RUN apt-get install -y lib32ncurses5
 RUN apt-get install -y lib32stdc++6
+
+
+
+
+
+EXPOSE 80/tcp #Apache port
+EXPOSE 3306/tcp #MySQL port
