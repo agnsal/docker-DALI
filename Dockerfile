@@ -16,8 +16,5 @@ RUN git clone git://github.com/AAAI-DISIM-UnivAQ/DALI
 RUN cd DALI
 RUN rm -rf mas
 
-BUILD -t agnesesalutari/ServerDALI
-
-
 EXPOSE 80/tcp
 EXPOSE 3306/tcp
