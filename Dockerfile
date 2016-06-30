@@ -16,7 +16,6 @@ RUN git clone git://github.com/AAAI-DISIM-UnivAQ/DALI
 RUN cd DALI
 RUN rm -rf mas
 
-RUN -d -p 80:80 -e ALLOW_OVERRIDE=true tutum/apache-php
 BUILD -t agnesesalutari/ServerDALI
 
 
