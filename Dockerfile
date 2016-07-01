@@ -8,6 +8,7 @@ RUN apt-get install -y lib32ncurses5
 RUN apt-get install -y lib32stdc++6
 
 # SICStus needed
+RUN [ -f /usr/local/sicstus4.2.3/bin ] && echo "Ok, SICStus already installed." || echo "SICStus not installed, you need to install SICStus." && exit
 
 RUN apt-get -y install wget git
 RUN git clone git://github.com/agnsal/ServerDALI
