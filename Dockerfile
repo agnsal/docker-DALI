@@ -8,7 +8,7 @@ RUN apt-get install -y lib32ncurses5
 RUN apt-get install -y lib32stdc++6
 
 # SICStus needed
-ADD prerequisites.sh /prerequisites.sh 
+# ADD prerequisites.sh /prerequisites.sh 
 
 RUN apt-get -y install wget git
 RUN git clone git://github.com/agnsal/ServerDALI
