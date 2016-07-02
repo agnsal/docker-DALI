@@ -9,8 +9,6 @@ RUN apt-get install -y lib32stdc++6
 
 RUN apt-get install -y build-essential
 
-RUN apt-get install -y xterm
-
 # SICStus needed
 # ADD prerequisites.sh /prerequisites.sh 
 
