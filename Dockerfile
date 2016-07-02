@@ -14,10 +14,8 @@ RUN apt-get install -y build-essential
 
 RUN apt-get -y install wget git
 RUN git clone git://github.com/agnsal/ServerDALI
-RUN cd ServerDALI
-RUN git clone git://github.com/AAAI-DISIM-UnivAQ/DALI
-RUN cd DALI
-RUN git clone git://github.com/agnsal/ServerDALImas
+RUN git clone git://github.com/AAAI-DISIM-UnivAQ/DALI ServerDALI
+RUN git clone git://github.com/agnsal/ServerDALImas ServerDALI/DALI
 
 EXPOSE 80/tcp
 EXPOSE 3306/tcp
